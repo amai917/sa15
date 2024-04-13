@@ -1,0 +1,50 @@
+body, html {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.entry {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-entry {
+    border-left: 2px solid #333;
+    margin-left: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-entry:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px; 
+    top: 10px;
+}
